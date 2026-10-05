@@ -70,7 +70,7 @@
         ["xpath=//input[@id='email']", "xpath:attributes"],
         ["xpath=//div[2]/input", "xpath:position"]
       ],
-      "value": "lucas@gmail.com"
+      "value": "demo-cliente@example.com"
     }, {
       "id": "62c81787-85e7-4b63-8386-c69e58cb714d",
       "comment": "",

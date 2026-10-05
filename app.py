@@ -1,3 +1,4 @@
+import os
 from flask import Flask
 from routes.cliente_routes import cliente_bp
 from routes.agendamento_routes import agendamento_bp
@@ -10,7 +11,9 @@ from routes.pet_routes import pet_bp
 # from routes.agendamento_routes import agendamento_bp
 
 app = Flask(__name__)
-app.secret_key = 'sua_chave_secreta_aqui'
+app.secret_key = os.environ["FLASK_SECRET_KEY"]
+if not app.secret_key.strip():
+    raise RuntimeError("FLASK_SECRET_KEY must be set")
 
 
 # Instanciando o LoginManager

@@ -1,0 +1,15 @@
+# Reconstructed from imports and package metadata of the original snapshot.
+# Historical runtime versions; not a supported production dependency baseline.
+Flask==3.0.3
+Flask-Login==0.6.3
+bcrypt==4.2.0
+mysql-connector==2.2.9
+PyJWT==2.9.0
+Werkzeug==3.0.4
+# Preserve historical Flask dependencies for this local reproduction.
+Jinja2==3.1.4
+itsdangerous==2.2.0
+click==8.1.7
+blinker==1.8.2
+MarkupSafe==3.0.2
+colorama==0.4.6
