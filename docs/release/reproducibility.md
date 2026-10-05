@@ -21,7 +21,7 @@ cd petland
 git rev-parse HEAD
 ```
 
-No Windows, coloque o clone em `C:\Users\LUCASMARQUESMARQUES\Documents\GitHub` ou no diretório equivalente escolhido pelo leitor. Registre o SHA emitido; branches podem avançar. Para repetir um artefato específico, use o SHA do seu manifesto: `git checkout --detach SHA_DO_COMMIT`. A tag anotada `v3.0.0` identifica o commit final validado; não inferir o SHA de mídias antigas pela versão atual.
+No Windows, coloque o clone em `%USERPROFILE%\Documents\GitHub` ou no diretório equivalente escolhido pelo leitor. Registre o SHA emitido; branches podem avançar. Para repetir um artefato específico, use o SHA do seu manifesto: `git checkout --detach SHA_DO_COMMIT`. A tag anotada `v3.0.0` identifica o commit final validado; não inferir o SHA de mídias antigas pela versão atual.
 
 ## Cinco caminhos, requisitos distintos
 

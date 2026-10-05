@@ -1,6 +1,6 @@
 # Fotografia editorial PetLand — origem
 
-Nova imagem de marca criada em 01/10/2026 pelo tool integrado **image_gen**, sem imagem de entrada. Não é fotografia documental de cliente/loja. Original mantido em `C:/Users/LUCASMARQUESMARQUES/.codex/generated_images/01a0d0ae-0fc2-7933-8aa7-fd521b552930/exec-e66c559b-2582-4127-b7be-e6005252bdb9.png`.
+Imagem criada com image generation em 01/10/2026, sem imagem de entrada; arquivo fonte local não versionado. Não é fotografia documental de cliente/loja.
 
 SHA-256 do PNG original: `b367de6ca9baf3c12891de2fc96ff56532e3017e7729d0c31e137ecbf63baf28`.
 
