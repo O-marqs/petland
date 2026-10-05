@@ -1,3 +1,4 @@
+import os
 from flask import Blueprint, request, jsonify
 from werkzeug.security import check_password_hash
 import mysql.connector
@@ -5,7 +6,9 @@ import jwt
 import datetime
 
 # Configurações para a chave secreta do JWT
-SECRET_KEY = 'sua_chave_secreta'  # Alterar para algo seguro
+SECRET_KEY = os.environ["JWT_SECRET_KEY"]
+if not SECRET_KEY.strip():
+    raise RuntimeError("JWT_SECRET_KEY must be set")
 
 # Inicializando o Blueprint
 auth = Blueprint('auth', __name__)
@@ -13,10 +16,10 @@ auth = Blueprint('auth', __name__)
 # Conexão com MySQL
 def get_db_connection():
     connection = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="senha_mysql",
-        database="petland"
+        host=os.environ.get("MYSQL_HOST", "localhost"),
+        user=os.environ.get("MYSQL_USER", "root"),
+        password=os.environ["MYSQL_PASSWORD"],
+        database=os.environ.get("MYSQL_DATABASE", "petland")
     )
     return connection
 

@@ -1,0 +1,41 @@
+# Local Python environments and generated files
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+coverage/
+htmlcov/
+coverage.xml
+*.egg-info/
+# Local configuration, tooling and databases
+.env
+.env.*
+!.env.example
+.audit/
+*.log
+logs/
+tmp/
+temp/
+*.db
+*.sqlite
+*.sqlite3
+*.dump
+*.backup
+*.bak
+*.sql.gz
+*.pem
+*.key
+# Generated frontend / editor / OS files
+node_modules/
+dist/
+build/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
