@@ -11,7 +11,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 
 from check_final_case import validate_final
-from repository_hygiene import check_public_file, check_public_path
+from repository_hygiene import check_current_file, check_public_file, check_public_path
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = "docs/release/candidate.json"
@@ -172,7 +172,7 @@ def bundle():
             if name.endswith("/"):
                 continue
             data = file.read(name)
-            check_public_file(name, data)
+            check_current_file(name, data)
             files[name] = hashlib.sha256(data).hexdigest()
     (folder / "manifest.json").write_text(
         json.dumps(

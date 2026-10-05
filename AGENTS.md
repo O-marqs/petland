@@ -28,7 +28,7 @@ Antes de entregar: `python scripts/dev.py check`; aplicação iniciada: `python 
 - `.env`, caches, venvs e node_modules nunca versionados. Use configuração validada, logs por allowlist e erros públicos seguros.
 - Identidade/permissões sempre no servidor; não guardar tokens em localStorage nem usar CPF como identidade pública. Sessão/CSRF, convites e papéis são implementados em `identity`; não substituir por autenticação simulada. A matriz D07 está em `docs/architecture/authorization.md`.
 - Nenhuma reserva fictícia para demonstrar contratos; dados sintéticos somente identificados em demo/testes.
-- Preserve tag `legacy/petland-2.0-2024-11-24` e histórico. Não force push, não reescreva história, não altere main, não descarte mudanças alheias. Repositórios locais ficam em `C:\Users\LUCASMARQUESMARQUES\Documents\GitHub`.
+- Preserve tag `legacy/petland-2.0-2024-11-24` e histórico. Não force push, não reescreva história, não altere main, não descarte mudanças alheias. Repositórios locais ficam em `%USERPROFILE%\Documents\GitHub`.
 - O worktree `petland-3.0` depende da pasta original `petland 2.0` para os metadados Git; não mova/remova a original.
 - Não fazer merge automático, deploy de produção ou criar recursos pagos. PRs de revisão estão autorizados. P06 parte do merge `679eae5` em `petland-3.0-p06`, com base de PR `petland-3.0-p04`, onde P05 foi integrada pelo usuário.
 
@@ -55,3 +55,7 @@ Apresentação final autorizada em `docs/implementation/Final-case-request.txt`,
 ## Fechamento autorizado — 02/10/2026
 
 O pedido explícito em `docs/implementation/Portfolio-closure-request.txt` prevalece sobre restrições anteriores de não integrar main, fazer merge/tag/release ou renomear o repositório. Autoriza: merge commit do PR #13 com CI exata verde, preservar legado 3cc3f898, promover metadata 3.0.0 por PR temporário de release com CI verde, renomear para O-marqs/petland, clean clone independente, tag anotada v3.0.0 no main validado, GitHub Release de portfólio/demo, comentar/fechar PRs obsoletos e remover somente branches integralmente alcançáveis por main/tag. Não autoriza features/regras/migrations/arquitetura novas, force push, perda de commits, alterações de evidências históricas, licença automática ou declaração comercial. production_ready permanece false; leitor de tela e D10 pendentes. Publicação é comprovada pela GitHub Release e publication.json anexado após published_at real, mantendo main/tag imutáveis no mesmo SHA.
+
+## Higiene pública autorizada — 05/10/2026
+
+Branch `chore/public-sanitization` parte da main atualizada. Somente auditoria de privacidade/credenciais, neutralização de caminhos e guard com testes; não é fase de produto. Não fazer merge, alterar funcionalidades/arquitetura/regras, reescrever histórico ou mover tags/assets históricos. Qualquer REAL SECRET bloqueia a conclusão global; relatar sem valores e preservar evidências. Política e exposição legada em [public-repository](docs/security/public-repository.md). Configuração noreply pertence apenas ao clone local.

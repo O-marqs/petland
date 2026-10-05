@@ -167,3 +167,12 @@ Demo própria `petlandfinalcase`, 8445/55436/8028, sem pausar/copiar staging pes
 Tentativa 1 falhou em mobile: nome longo do pet expandiu detalhe do tutor para 334 px em viewport 320. Tentativa 2 usa Nala e passou; a limitação de texto longo permanece explícita, sem mudança do produto para a gravação. Player final/histórico verificados a 1280/320 px, todos os capítulos/legendas/ranges/links/transcrição/axe/reflow/zero erros JS. [Evidência e arquivos](../evidence/Final-case.md), [origem com hashes](../case/media/final/capture.json).
 
 Checks de documentação/hashes/diagramas/guard de pacote/lint e CI do commit desta revisão registrados na evidência/PR conforme execução; sem aceitar resultado antecipado. Próximos gates: revisão humana do material/produto/leitor de tela, licença e D10. Sem merge/tag/publicação/release estável.
+
+
+## Higiene do repositório público — 05/10/2026
+
+Branch `chore/public-sanitization`, base main `68dfb35`: neutralizados cinco caminhos pessoais/internos na documentação, sem modificar originais, mídia, funcionalidades ou evidências medidas. Guard atual e novos bundles rejeitam caminhos pessoais, bancos/dumps disfarçados e credenciais legadas conhecidas por fingerprint; pacotes históricos preservam seus caminhos. [Política e bloqueio histórico](../security/public-repository.md).
+
+Gitleaks 8.30.1 no estado atual, histórico alcançável e fonte da Release: três achados atuais e onze históricos, todos falsos positivos revisados (hashes de proveniência e código de dependências). Revisão manual encontrou três credenciais fixas no legado, ausentes no estado atual/pacote v3.0.0: conclusão global BLOCKED até tratar a exposição. Tags, autoria histórica e assets preservados; e-mail noreply configurado somente neste clone. Manifest, checksums e 444 arquivos do ZIP histórico verificados.
+
+Documentação, guard, 21 testes de release/higiene, consistência da release, lint/formatação, mypy, arquitetura, contratos/build e 20 testes React passaram localmente. `dev.py check` chegou à integração e foi impedido pelo Docker indisponível; não declarar integração local aprovada. Resultados da CI do commit exato ficam no PR. Nenhum merge autorizado.

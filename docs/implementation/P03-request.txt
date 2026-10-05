@@ -14,4 +14,4 @@ D11: Aprovada
 
 OS QUE NÃO FORAM RESPONDIDOS OU TOTALMENTE RESPONDIDOS SEGUIR RECOMENDAÇÃO, pode começar a P03
 
-Preferências anteriores mantidas: repositórios locais em C:\Users\LUCASMARQUESMARQUES\Documents\GitHub. Se houver problema de Docker, parar e explicar como ajustar para continuar.
+Preferências anteriores mantidas: repositórios locais em %USERPROFILE%\Documents\GitHub. Se houver problema de Docker, parar e explicar como ajustar para continuar.
